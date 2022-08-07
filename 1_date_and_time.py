@@ -16,9 +16,9 @@ def print_days():
     d_now = datetime.now().date()
     delta1 = timedelta(days=1)
     delta2 = timedelta(days=30)
-    print(d_now - delta1)
-    print(d_now)
-    print(d_now - delta2)
+    print(f'Вчера: {d_now - delta1}')
+    print(f'Сегодня: {d_now}')
+    print(f'30 дней назад: {d_now - delta2}')
 
 
 def str_2_datetime(date_string):
